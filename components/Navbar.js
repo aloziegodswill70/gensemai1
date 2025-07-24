@@ -10,9 +10,6 @@ export default function Navbar() {
           GENSEMAI
         </Link>
         <div className="flex gap-6">
-          <Link href="/" className="hover:text-blue-400">
-            Home
-          </Link>
           <Link href="/seminar" className="hover:text-blue-400">
             Seminar
           </Link>
