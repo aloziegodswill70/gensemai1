@@ -7,7 +7,7 @@ export default function Navbar() {
     <nav className="w-full bg-black text-white shadow-md fixed top-0 left-0 z-50">
       <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
         <Link href="/" className="text-2xl font-bold text-blue-500 hover:text-blue-400">
-          AI-Gen
+          GENSEMAI
         </Link>
         <div className="flex gap-6">
           <Link href="/" className="hover:text-blue-400">
