@@ -1,7 +1,7 @@
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import ServiceWorkerRegister from "../components/ServiceWorkerRegister";
 
 export const metadata = {
   title: "AI Seminar & Thesis Generator",
@@ -14,9 +14,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* ✅ Propeller Ads Script */}
+        <Script
+          src="//aiharsoreersu.net/ntfc.php?p=9624191"
+          strategy="afterInteractive"
+          async
+          data-cfasync="false"
+        />
+      </head>
       <body className="bg-black text-white">
         <Navbar />
-        <ServiceWorkerRegister />
         {children}
         <Footer />
       </body>
