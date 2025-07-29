@@ -1,11 +1,16 @@
-// components/ClientScriptProvider.js
-"use client";
+'use client';
 
 import Script from "next/script";
+import Head from "next/head";
 
 export default function ClientScriptProvider() {
   return (
     <>
+      {/* ✅ Meta Tag for AdSense */}
+      <Head>
+        <meta name="google-adsense-account" content="ca-pub-7031040419946505" />
+      </Head>
+
       {/* ✅ Propeller Ads Script */}
       <Script
         src="//aiharsoreersu.net/ntfc.php?p=9624191"
