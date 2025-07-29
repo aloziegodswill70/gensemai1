@@ -1,8 +1,8 @@
-// ✅ app/layout.js
-import Script from "next/script";
+// app/layout.js
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ClientScriptProvider from "../components/ClientScriptProvider";
 
 export const metadata = {
   title: "AI Seminar & Thesis Generator",
@@ -15,29 +15,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        {/* ✅ Propeller Ads Script */}
-        <Script
-          src="//aiharsoreersu.net/ntfc.php?p=9624191"
-          strategy="afterInteractive"
-          async
-          data-cfasync="false"
-        />
-
-        {/* ✅ Profitableratecpm Script */}
-        <Script
-          src="//pl27278547.profitableratecpm.com/1f59e71fa26029af801c4ec9fe5a0581/invoke.js"
-          strategy="afterInteractive"
-          async
-          data-cfasync="false"
-        />
-      </head>
       <body className="bg-black text-white">
+        {/* ✅ Global Ad/Tracking Scripts */}
+        <ClientScriptProvider />
+
+        {/* ✅ Layout Content */}
         <Navbar />
         {children}
         <Footer />
 
-        {/* ✅ Profitableratecpm Container */}
+        {/* ✅ Ad Container */}
         <div id="container-1f59e71fa26029af801c4ec9fe5a0581"></div>
       </body>
     </html>
