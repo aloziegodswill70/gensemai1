@@ -15,7 +15,7 @@ export default function HeroSection() {
       </p>
 
       {/* === Buttons === */}
-      <div className="flex flex-col md:flex-row gap-6 mb-6">
+      <div className="flex flex-col md:flex-row gap-6 mb-6 flex-wrap justify-center">
         <Link
           href="/seminar"
           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md text-center"
@@ -27,6 +27,18 @@ export default function HeroSection() {
           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md text-center"
         >
           Generate Thesis
+        </Link>
+        <Link
+          href="/voice-from-notes"
+          className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-md text-center"
+        >
+          Upload Notes → Voice
+        </Link>
+        <Link
+          href="/translate-voice"
+          className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg shadow-md text-center"
+        >
+          Translate Voice Note
         </Link>
       </div>
 
@@ -43,7 +55,7 @@ export default function HeroSection() {
         {/* Profile Picture */}
         <div className="flex-shrink-0">
           <Image
-            src="/images/godswil.jpg" // 👉 put your picture in /public/myphoto.jpg or change to an online URL
+            src="/images/godswil.jpg"
             alt="Dr. Godswill Alozie Onyedikachi"
             width={150}
             height={150}

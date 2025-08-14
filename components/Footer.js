@@ -7,13 +7,13 @@ export default function Footer() {
         </p>
         <div className="text-xs flex justify-center gap-4">
           <a
-            href="/privacy-policy"
+            href="/privacy"
             className="hover:text-white transition-colors duration-200 underline"
           >
             Privacy Policy
           </a>
           <a
-            href="/terms-of-service"
+            href="/terms"
             className="hover:text-white transition-colors duration-200 underline"
           >
             Terms of Service
